@@ -67,6 +67,85 @@ It is designed to work with:
 5. If anomaly detected → Alert is generated
 
 ---
+## Types of Cyber Attacks in Smart Grids
+
+Smart power grids are vulnerable to multiple types of cyber attacks. GridShield considers the following major threats:
+
+### False Data Injection (FDI) Attack
+
+Attackers manipulate sensor data (CT/PT readings) to mislead the system, causing incorrect decisions and potential grid instability.
+
+### Denial of Service (DoS / DDoS)
+
+Overloads the network or servers, making critical systems like SCADA or RTUs unavailable to operators.
+
+### Man-in-the-Middle (MITM) Attack
+
+An attacker intercepts communication between devices (e.g., RTU and SCADA), potentially altering or stealing sensitive data.
+
+### Replay Attack
+
+Previously captured valid data is resent to the system to create false scenarios or bypass detection mechanisms.
+
+### Malware Injection
+
+Malicious software is introduced into grid systems to disrupt operations, steal data, or gain unauthorized control.
+
+### Phishing & Social Engineering
+
+Targets human operators to gain access credentials or sensitive system information.
+
+### Insider Threat
+
+Authorized users misuse their access intentionally or unintentionally, leading to system compromise.
+
+### Advanced Persistent Threats (APT)
+
+Long-term, targeted attacks where intruders remain undetected while continuously extracting or manipulating data.
+
+### Data Integrity Attacks
+
+Tampering with data to reduce its accuracy and reliability without being immediately detected.
+
+---
+
+## Attack Detection & Coverage by GridShield
+
+GridShield follows a phased and realistic approach to handling cybersecurity threats in smart grids.
+
+### Currently Implemented (Actively Detected)
+
+* False Data Injection (FDI) Attacks
+* Data Integrity Attacks
+* General Anomaly-Based Intrusions
+
+These are detected using AI-based anomaly detection models on simulated grid data.
+
+---
+
+### Partially Implemented / Simulated
+
+* Denial of Service (DoS / DDoS)
+* Replay Attacks
+* Man-in-the-Middle (MITM)
+
+Detection logic for these attacks is conceptually designed and tested in controlled environments but not fully deployed.
+
+---
+
+### Future Implementation
+
+* Advanced Persistent Threats (APT)
+* Malware Injection Detection
+* Insider Threat Monitoring
+* Phishing & Social Engineering Detection
+
+These will be implemented using advanced AI models, behavioral analysis, and real-world system integration.
+
+---
+
+This approach ensures that GridShield is scalable, starting with core detection capabilities and expanding toward a complete smart grid cybersecurity solution.
+
 
 ## Project Evolution
 
